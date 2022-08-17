@@ -16,44 +16,204 @@ Config.LicenseRank = 2
 
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Locations = {
+	-- MRPD
     ["duty"] = {
-        [1] = vector3(440.085, -974.924, 30.689),
-        [2] = vector3(-449.811, 6012.909, 31.815),
+	-- MRPD
+		[1] = vector3(441.22, -981.99, 30.69),
+	-- BCSO
+		[2] = vector3(1834.05, 3677.98, 34.19),
+	-- Paleto SO
+		[3] = vector3(-446.86, 6012.61, 32.29),
+	-- Davis
+		[4] = vector3(373.15, -1593.47, 30.05),
+	-- La Mesa
+		[5] = vector3(373.15, -1593.47, 30.05),
+	-- Rockford Hills
+		[6] = vector3(-563.88, -126.88, 38.44),
+	-- Vespucci
+		[7] = vector3(-1098.76, -840.99, 19.0),
+		[8] = vector3(-1095.52, -817.79, 19.04),
+	-- Route 13
+		[9] = vector3(1541.65, 817.45, 77.66),
+	-- Beaver Bush
+		[10] = vector3(386.44, 794.42, 187.46),
     },
     ["vehicle"] = {
-        [1] = vector4(448.159, -1017.41, 28.562, 90.654),
-        [2] = vector4(471.13, -1024.05, 28.17, 274.5),
-        [3] = vector4(-455.39, 6002.02, 31.34, 87.93),
+	-- MRPD
+		[1] = vector4(442.11, -1016.3, 28.68, 359.86),
+	-- BCSO
+		[2] = vector4(1820.69, 3686.29, 33.97, 22.08),
+	-- Paleto SO
+		[3] = vector4(-462.96, 6019.1, 31.34, 320.56),
+	-- Davis
+		[4] = vector4(381.6, -1625.74, 29.29, 52.5),
+	-- La Mesa
+		[5] = vector4(845.14, -1330.2, 26.16, 40.69),
+	-- Rockford Hills
+		[6] = vector4(-568.42, -122.17, 33.65, 12.33),
+	-- Vespucci
+		[7] = vector4(-1120.25, -857.69, 13.52, 213.53),
+	-- Route 13
+		[8] = vector4(1558.08, 809.41, 77.12, 77.3),
+	-- Beaver Bush
+		[9] = vector4(374.13, 789.59, 187.17, 359.1),
     },
     ["stash"] = {
+	-- MRPD
         [1] = vector3(453.075, -980.124, 30.889),
+	-- BCSO
+		[2] = vector3(1840.98, 3682.42, 34.19),
+	-- Paleto SO
+		[3] = vector3(-437.48, 6009.07, 37.0),
+	-- Davis
+		[4] = vector3(361.22, -1592.12, 25.45),
+	-- La Mesa
+		[5] = vector3(854.96, -1311.06, 28.24),
+	-- Rockford Hills
+		[6] = vector3(-547.98, -115.63, 37.86),
+	-- Vespucci
+		[7] = vector3(-1093.0, -832.61, 14.28),
+	-- Route 13
+		[8] = vector3(1551.83, 823.36, 77.66),
+	-- Beaver Bush
+		[9] = vector3(386.5, 799.71, 187.46),
     },
     ["impound"] = {
-        [1] = vector4(436.68, -1007.42, 27.32, 180.0),
-        [2] = vector4(-436.14, 5982.63, 31.34, 136.0),
+	-- MRPD
+        [1] = vector4(454.8943, -1024.5563, 28.4763, 220.5611),
+	-- BCSO
+		[2] = vector4(1839.72, 3690.29, 33.97, 319.1),
+	-- Paleto SO
+		[3] = vector4(-447.97, 6045.63, 31.34, 302.13),
+	-- Davis
+		[4] = vector4(408.45, -1625.57, 29.29, 52.07),
+	-- La Mesa
+		[5] = vector4(824.18, -1372.87, 26.14, 162.9),
+	-- Rockford Hills
+		[6] = vector4(-568.38, -109.34, 33.65, 145.71),
+	-- Vespucci
+		[7] = vector4(-1126.98, -833.63, 13.42, 335.31),
+	-- Route 13
+		[8] = vector4(1540.48, 802.37, 77.01, 61.46),
+	-- Beaver Bush
+		[9] = vector4(400.27, 784.03, 187.53, 316.77),
     },
     ["helicopter"] = {
-        [1] = vector4(449.168, -981.325, 43.691, 87.234),
-        [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
+	-- MRPD
+        [1] = vector4(449.2903, -981.4607, 43.6913, 3.0830),
+	-- BCSO	
+		[2] = vector4(1853.39, 3706.24, 33.97, 291.99),
+	-- Paleto SO
+		[3] = vector4(-475.24, 5988.86, 31.34, 127.91),
+	-- Davis
+		-- None
+	-- La Mesa
+		-- None
+	-- Rockford Hills
+		-- None
+	-- Vespucci
+		[4] = vector4(-1095.77, -831.93, 37.7, 272.71),
+	-- Route 13
+		[5] = vector4(1565.1, 843.86, 77.14, 51.93),
+	-- Beaver Bush		
+		-- None
     },
     ["armory"] = {
-        [1] = vector3(462.23, -981.12, 30.68),
+	-- MRPD
+        [1] = vector3(479.13, -996.94, 30.69),
+	-- BCSO
+		[2] = vector3(1836.3, 3687.02, 34.19),
+	-- Paleto SO
+		[3] = vector3(-447.07, 6016.49, 37.0),
+	-- Davis
+		[4] = vector3(362.55, -1603.22, 25.45),
+	-- La Mesa
+		[5] = vector3(849.38, -1313.03, 28.24),
+	-- Rockford Hills
+		[6] = vector3(-541.63, -117.88, 37.86),
+	-- Vespucci
+		[7] = vector3(-1106.16, -826.88, 14.28),
+	-- Route 13
+		[8] = vector3(1550.87, 841.86, 77.66),
+	-- Beaver Bush
+		[9] = vector3(384.91, 799.69, 187.46),
+	
     },
     ["trash"] = {
-        [1] = vector3(439.0907, -976.746, 30.776),
+	-- MRPD
+        [1] = vector3(452.5824, -998.4259, 30.6896),
+	-- BCSO
+		[2] = vector3(1818.26, 3674.51, 34.19),
+	-- Paleto SO
+		[3] = vector3(-453.72, 5998.54, 37.0),
+	-- Davis
+		[4] = vector3(382.13, -1607.97, 30.2),
+	-- La Mesa
+		[5] = vector3(858.27, -1294.41, 28.24),
+	-- Rockford Hills
+		[6] = vector3(-560.28, -102.96, 37.86),
+	-- Vespucci
+		[7] = vector3(-1089.3, -811.71, 11.04),
+	-- Route 13
+		[8] = vector3(1546.54, 824.33, 82.13),
+	-- Beaver Bush
+		[9] = vector3(379.81, 796.54, 190.49),
     },
     ["fingerprint"] = {
-        [1] = vector3(460.9667, -989.180, 24.92),
+	-- MRPD
+        [1] = vector3(473.14, -1007.56, 26.27),
+		[2] = vector3(473.48, -1013.39, 26.27),
+	-- BCSO
+		[3] = vector3(1817.62, 3665.97, 34.19),
+	-- Paleto SO
+		[4] = vector3(-452.7, 5998.18, 27.58),
+		[5] = vector3(-440.45, 6010.77, 27.58),
+	-- Davis
+		[6] = vector3(380.15, -1602.61, 25.45),
+	-- La Mesa
+		[7] = vector3(839.05, -1292.45, 28.24),
+	-- Rockford Hills
+		[8] = vector3(-556.96, -112.6, 37.86),
+	-- Vespucci
+		[9] = vector3(-1072.22, -824.71, 5.48),	
+		[10] = vector3(-1095.03, -814.19, 5.48),
+	-- Route 13
+		[11] = vector3(1555.11, 834.97, 77.66),
+	-- Beaver Bush
+		[9] = vector3(381.55, 794.09, 190.49),
     },
     ["evidence"] = {
-        [1] = vector3(442.1722, -996.067, 30.689),
-        [2] = vector3(451.7031, -973.232, 30.689),
-        [3] = vector3(455.1456, -985.462, 30.689),
+	-- MRPD
+        [1] = vector3(446.8464, -996.9363, 30.6896),
+	-- BCSO
+		[2] = vector3(1819.71, 3671.2, 34.19),
+	-- Paleto SO
+		[3] = vector3(-452.23, 5997.5, 37.0),
+	-- Davis
+		[4] = vector3(379.19, -1609.69, 30.2),
+	-- La Mesa
+		[5] = vector3(854.74, -1294.59, 28.24),
+	-- Rockford Hills
+		[6] = vector3(-560.72, -101.16, 37.86),
+	-- Vespucci
+		[7] = vector3(-1085.21, -810.61, 11.04),
+	-- Route 13
+		[8] = vector3(1546.83, 827.63, 82.13),
+	-- Beaver Bush
+		[9] = vector3(383.05, 799.93, 190.49),
     },
     ["stations"] = {
-        [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
-        [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
-        [3] = {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
+        [1] = {label = "Misson Row PD", coords = vector4(428.23, -984.28, 29.76, 3.5)},
+        [2] = {label = "Boilingbroke Penitentiary", coords = vector4(1853.17, 2586.23, 45.67, 270.53)},
+        [3] = {label = "Paleto Substation", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
+		[4] = {label = "Blaine County Sheriffs Office", coords = vector4(1841.46, 3664.28, 33.92, 24.54)},
+		[5] = {label = "Davis Substaion", coords = vector4(398.48, -1600.95, 29.29, 318.57)},
+		[6] = {label = "La Mesa Substation", coords = vector4(824.71, -1290.2, 28.23, 272.73)},
+		[7] = {label = "Vespucci SASP HQ", coords = vector4(-1112.74, -848.66, 19.32, 308.04)},
+		[8] = {label = "Rockford Hills LSPD HQ", coords = vector4(-560.73, -134.36, 38.11, 20.73)},
+		[9] = {label = "Route 13 Substation", coords = vector4(1531.1, 822.46, 77.43, 252.02)},
+		[10] = {label = "Beaver Bush Substation", coords = vector4(387.1, 788.47, 187.58, 1.56)},
+		
     },
 }
 
@@ -102,62 +262,79 @@ Config.SecurityCameras = {
 }
 
 Config.AuthorizedVehicles = {
-	-- Grade 0
+	-- Cadet & Probationary
 	[0] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["n11vic"] = "2011 Ford Crown Victoria",
 	},
-	-- Grade 1
+	-- Officer I
 	[1] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
-
+		["n11vic"] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
 	},
-	-- Grade 2
+	-- Officer II
 	[2] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["n11vic "] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
+		["n16impala"] = "2016 Chevrolet Impala",
 	},
-	-- Grade 3
+	-- Officer III
 	[3] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
+		["n11vic"] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
+		["n16impala"] = "2016 Chevrolet Impala",
+		["n14tahoe"] = "2014 Chevrolet Tahoe",
+		["n14charger"] = "2014 Dodge Charger",
 	},
-	-- Grade 4
+	-- Senior Officer
 	[4] = {
-		["police"] = "Police Car 1",
-		["police2"] = "Police Car 2",
-		["police3"] = "Police Car 3",
-		["police4"] = "Police Car 4",
-		["policeb"] = "Police Car 5",
-		["policet"] = "Police Car 6",
-		["sheriff"] = "Sheriff Car 1",
-		["sheriff2"] = "Sheriff Car 2",
-	}
+		["n11vic "] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
+		["n16impala"] = "2016 Chevrolet Impala",
+		["n14tahoe"] = "2014 Chevrolet Tahoe",
+		["n14charger"] = "2014 Dodge Charger",
+		["n18taurus"] = "2018 Ford Taurus",
+	},
+	-- Supervisor
+	[5] = {
+		["n11vic"] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
+		["n16impala"] = "2016 Chevrolet Impala",
+		["n14tahoe"] = "2014 Chevrolet Tahoe",
+		["n14charger"] = "2014 Dodge Charger",
+		["n18taurus"] = "2018 Ford Taurus",
+		["n16explorer"] = "2016 Ford Explorer [CPL+]",
+		["n18charger"] = "2018 Dodge Charger [SGT I+]",
+		["n19tahoe"] = "2019 Chevrolet Tahoe [SGT II+]",
+	},
+	-- Command
+	[6] = {
+		["n11vic"] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
+		["n16impala"] = "2016 Chevrolet Impala",
+		["n14tahoe"] = "2014 Chevrolet Tahoe",
+		["n14charger"] = "2014 Dodge Charger",
+		["n18taurus"] = "2018 Ford Taurus",
+		["n16explorer"] = "2016 Ford Explorer",
+		["n18charger"] = "2018 Dodge Charger",
+		["n19tahoe"] = "2019 Chevrolet Tahoe",
+		["n18f150"] = "2018 Ford F150",
+		["n14ram"] = "2014 Dodge Ram [CPT+]",
+	},
+	-- High Command
+	[7] = {
+		["n11vic"] = "2011 Ford Crown Victoria",
+		["n12caprice"] = "2012 Chevrolet Caprice",
+		["n16impala"] = "2016 Chevrolet Impala",
+		["n14tahoe"] = "2014 Chevrolet Tahoe",
+		["n14charger"] = "2014 Dodge Charger",
+		["n18taurus"] = "2018 Ford Taurus",
+		["n16explorer"] = "2016 Ford Explorer",
+		["n18charger"] = "2018 Dodge Charger",
+		["n19tahoe"] = "2019 Chevrolet Tahoe",
+		["n18f150"] = "2018 Ford F150",
+		["n14ram"] = "2014 Dodge Ram",
+		["n19mustang"] = "2019 Ford Mustang",
+	},
 }
 
 Config.WhitelistedVehicles = {}
@@ -225,7 +402,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 1,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [2] = {
             name = "weapon_stungun",
@@ -236,7 +413,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 2,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [3] = {
             name = "weapon_pumpshotgun",
@@ -250,7 +427,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 3,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [4] = {
             name = "weapon_smg",
@@ -265,7 +442,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 4,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [5] = {
             name = "weapon_carbinerifle",
@@ -280,7 +457,7 @@ Config.Items = {
             },
             type = "weapon",
             slot = 5,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [6] = {
             name = "weapon_nightstick",
@@ -289,7 +466,7 @@ Config.Items = {
             info = {},
             type = "weapon",
             slot = 6,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [7] = {
             name = "pistol_ammo",
@@ -298,7 +475,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 7,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [8] = {
             name = "smg_ammo",
@@ -307,7 +484,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 8,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [9] = {
             name = "shotgun_ammo",
@@ -316,7 +493,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 9,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [10] = {
             name = "rifle_ammo",
@@ -325,7 +502,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 10,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [11] = {
             name = "handcuffs",
@@ -334,7 +511,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 11,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [12] = {
             name = "weapon_flashlight",
@@ -343,7 +520,7 @@ Config.Items = {
             info = {},
             type = "weapon",
             slot = 12,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [13] = {
             name = "empty_evidence_bag",
@@ -352,7 +529,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 13,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [14] = {
             name = "police_stormram",
@@ -361,7 +538,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 14,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [15] = {
             name = "armor",
@@ -370,7 +547,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 15,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [16] = {
             name = "radio",
@@ -379,7 +556,7 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 16,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
         },
         [17] = {
             name = "heavyarmor",
@@ -388,8 +565,62 @@ Config.Items = {
             info = {},
             type = "item",
             slot = 17,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
-        }
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
+		[18] = {
+            name = "nikon",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 18,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
+		[19] = {
+            name = "gsrtestkit",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 19,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
+		[20] = {
+            name = "dnatestkit",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 20,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
+		[21] = {
+            name = "breathalyzer",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 21,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
+		[22] = {
+            name = "breathalyzer",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 22,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
+		[23] = {
+            name = "accesstool",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 23,
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7}
+        },
     }
 }
 
