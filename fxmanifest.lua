@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QB-PoliceJob'
+description 'QB-PoliceJob fork by CoZmo#0007. Added support for multi-departments.'
 version '1.0.0'
 
 shared_scripts {

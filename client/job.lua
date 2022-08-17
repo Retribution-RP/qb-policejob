@@ -119,7 +119,7 @@ function TakeOutImpound(vehicle)
                 QBCore.Functions.SetVehicleProperties(veh, properties)
                 SetVehicleNumberPlateText(veh, vehicle.plate)
                 SetEntityHeading(veh, coords.w)
-                exports['LegacyFuel']:SetFuel(veh, vehicle.fuel)
+                exports['ps-fuel']:SetFuel(veh, vehicle.fuel)
                 doCarDamage(veh, vehicle)
                 TriggerServerEvent('police:server:TakeOutImpound', vehicle.plate, currentGarage)
                 closeMenuFull()
@@ -139,7 +139,7 @@ function TakeOutVehicle(vehicleInfo)
             SetCarItemsInfo()
             SetVehicleNumberPlateText(veh, Lang:t('info.police_plate')..tostring(math.random(1000, 9999)))
             SetEntityHeading(veh, coords.w)
-            exports['LegacyFuel']:SetFuel(veh, 100.0)
+            exports['ps-fuel']:SetFuel(veh, 100.0)
             closeMenuFull()
             if Config.VehicleSettings[vehicleInfo] ~= nil then
                 if Config.VehicleSettings[vehicleInfo].extras ~= nil then
@@ -332,7 +332,7 @@ RegisterNetEvent('police:client:ImpoundVehicle', function(fullImpound, price)
     local vehicle = QBCore.Functions.GetClosestVehicle()
     local bodyDamage = math.ceil(GetVehicleBodyHealth(vehicle))
     local engineDamage = math.ceil(GetVehicleEngineHealth(vehicle))
-    local totalFuel = exports['LegacyFuel']:GetFuel(vehicle)
+    local totalFuel = exports['ps-fuel']:GetFuel(vehicle)
     if vehicle ~= 0 and vehicle then
         local ped = PlayerPedId()
         local pos = GetEntityCoords(ped)
@@ -499,7 +499,7 @@ RegisterNetEvent('qb-police:client:spawnHelicopter', function(k)
             SetVehicleMod(veh, 0, 48)
             SetVehicleNumberPlateText(veh, "ZULU"..tostring(math.random(1000, 9999)))
             SetEntityHeading(veh, coords.w)
-            exports['LegacyFuel']:SetFuel(veh, 100.0)
+            exports['ps-fuel']:SetFuel(veh, 100.0)
             closeMenuFull()
             TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
             TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
@@ -569,7 +569,7 @@ else
         Wait(1000)
         while true do
             local sleep = 1000
-            if inDuty and PlayerJob.name == "police" then
+            if inDuty and PlayerJob.type == "leo" then
                 sleep = 5
                 if IsControlJustReleased(0, 38) then
                     onDuty = not onDuty
@@ -599,7 +599,7 @@ CreateThread(function()
     local evidenceCombo = ComboZone:Create(evidenceZones, {name = "evidenceCombo", debugPoly = false})
     evidenceCombo:onPlayerInOut(function(isPointInside)
         if isPointInside then
-            if PlayerJob.name == "police" and onDuty then
+            if PlayerJob.type == "leo" and onDuty then
                 local currentEvidence = 0
                 local pos = GetEntityCoords(PlayerPedId())
 
@@ -816,7 +816,7 @@ CreateThread(function()
     garageCombo:onPlayerInOut(function(isPointInside, point)
         if isPointInside then
             inGarage = true
-            if onDuty and PlayerJob.name == 'police' then
+            if onDuty and PlayerJob.type == 'leo' then
                 if IsPedInAnyVehicle(PlayerPedId(), false) then
                     exports['qb-core']:DrawText(Lang:t('info.store_veh'), 'left')
                 else
@@ -853,7 +853,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inStash and PlayerJob.name == "police" then
+        if inStash and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsControlJustReleased(0, 38) then
                 TriggerServerEvent("inventory:server:OpenInventory", "stash", "policestash_"..QBCore.Functions.GetPlayerData().citizenid)
@@ -871,7 +871,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inTrash and PlayerJob.name == "police" then
+        if inTrash and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsControlJustReleased(0, 38) then
                 TriggerServerEvent("inventory:server:OpenInventory", "stash", "policetrash", {
@@ -892,7 +892,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inFingerprint and PlayerJob.name == "police" then
+        if inFingerprint and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsControlJustReleased(0, 38) then
                 TriggerEvent("qb-police:client:scanFingerPrint")
@@ -909,7 +909,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inAmoury and PlayerJob.name == "police" then
+        if inAmoury and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsControlJustReleased(0, 38) then
                 TriggerEvent("qb-police:client:openArmoury")
@@ -926,7 +926,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inHelicopter and PlayerJob.name == "police" then
+        if inHelicopter and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsControlJustReleased(0, 38) then
                 TriggerEvent("qb-police:client:spawnHelicopter")
@@ -943,7 +943,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inImpound and PlayerJob.name == "police" then
+        if inImpound and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsPedInAnyVehicle(PlayerPedId(), false) then
                 if IsControlJustReleased(0, 38) then
@@ -962,7 +962,7 @@ CreateThread(function ()
     Wait(1000)
     while true do
         local sleep = 1000
-        if inGarage and PlayerJob.name == "police" then
+        if inGarage and PlayerJob.type == "leo" then
             if onDuty then sleep = 5 end
             if IsPedInAnyVehicle(PlayerPedId(), false) then
                 if IsControlJustReleased(0, 38) then
