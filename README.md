@@ -3,10 +3,6 @@ I created this fork with the help of Omen#1072, big shoutout for helping me with
 Now when creating jobs anything with `"type = leo"` will be LEO. Here's an example of my jobs.lua in qb-core/shared/jobs.lua
 This will replace your current qb-policejob folder
 
-## Known Issues
-Blips do not work
-Garage is still shared with all LEO jobs
-
 ```
 ['sasp'] = {
 		label = 'San Andreas State Police',
@@ -54,6 +50,9 @@ Garage is still shared with all LEO jobs
         },
 }
 ```
+## Known Issues
+Blips do not work
+Garage is still shared with all LEO jobs
 
 # License
 
