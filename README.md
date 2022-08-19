@@ -1,5 +1,5 @@
 # qb-policejob multi-department fork
-**If your qb-core was install before June 2022, please update or this will NOT work!!**
+## **If your qb-core was installed before June 2022, please update or this will NOT work!!**
 
 I created this fork with the help of Omen#1072, big shoutout for helping me with all my errors. This fork supports multi-department functions by changing `PlayerJob.name == "police" with PlayerJob.type == "leo"`.
 Now when creating jobs anything with `"type = leo"` will be LEO. Here's an example of my jobs.lua in qb-core/shared/jobs.lua
