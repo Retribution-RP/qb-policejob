@@ -52,9 +52,6 @@ This will replace your current qb-policejob folder
         },
 }
 ```
-## Known Issues
-- Blips do not work
-- Garage is still shared with all LEO jobs
 
 # License
 
