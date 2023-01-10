@@ -17,16 +17,16 @@ Config.LicenseRank = 2
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Locations = {
     ["duty"] = {
-        [1] = vector3(440.085, -974.924, 30.689),
+        [1] = vector3(442.79, -981.8, 30.69),   --lspd
         [2] = vector3(1833.15, 3679.3, 34.19),  --sheriff
     },
     ["vehicle"] = {
-        [1] = vector4(448.159, -1017.41, 28.562, 90.654),
+        [1] = vector4(445.58, -986.11, 25.7, 80.48),        --lspd
         [2] = vector4(471.13, -1024.05, 28.17, 274.5),
         [3] = vector4(-455.39, 6002.02, 31.34, 87.93),
     },
     ["stash"] = {
-        [1] = vector3(453.075, -980.124, 30.889),
+        [1] = vector3(484.54, -999.11, 30.69),      --lspd
         [2] = vector3(1841.56, 3681.48, 34.19), --sheriff
     },
     ["impound"] = {
@@ -35,30 +35,30 @@ Config.Locations = {
         [3] = vector3(1871.77, 3686.61, 33.69)  --sheriff
     },
     ["helicopter"] = {
-        [1] = vector4(449.168, -981.325, 43.691, 87.234),
+        [1] = vector4(449.47, -981.01, 43.69, 84.18),       --lspd
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
         [3] = vector3(1853.08, 3706.27, 33.97)    --sheriff
     },
     ["armory"] = {
-        [1] = vector3(462.23, -981.12, 30.68),
+        [1] = vector3(485.31, -995.28, 30.69),      --lspd
         [2] = vector3(1838.05, 3687.69, 34.19),   --sheriff
     },
     ["trash"] = {
-        [1] = vector3(439.0907, -976.746, 30.776),
+        [1] = vector3(470.53, -988.68, 26.27),      --lspd
         [2] = vector3(1835.88, 3684.3, 34.19),  --sheriff
     },
     ["fingerprint"] = {
-        [1] = vector3(460.9667, -989.180, 24.92),
+        [1] = vector3(472.04, -1014.06, 26.27),     --lspd
         [2] = vector3(1817.23, 3664.48, 34.19),  --sheriff
     },
     ["evidence"] = {
-        [1] = vector3(442.1722, -996.067, 30.689),
+        [1] = vector3(474.65, -997.49, 26.27),      --lspd
         [2] = vector3(451.7031, -973.232, 30.689),
         [3] = vector3(455.1456, -985.462, 30.689),
         [4] = vector3(1831.49, 3680.24, 38.86)  --sheriff
     },
     ["stations"] = {
-        [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
+        [1] = {label = "Police Station", coords = vector4(445.41, -991.96, 25.7, 87.31)},        --lspd
         [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
         [3] = {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
         [4] = {label = "Blaine County Sheriff Dept.", coords = vector4(1828.79, 3676.07, 38.86, 201.81)},    --sheriff
