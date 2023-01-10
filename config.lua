@@ -18,7 +18,7 @@ Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 Config.Locations = {
     ["duty"] = {
         [1] = vector3(440.085, -974.924, 30.689),
-        [2] = vector3(-449.811, 6012.909, 31.815),
+        [2] = vector3(1833.15, 3679.3, 34.19),  --sheriff
     },
     ["vehicle"] = {
         [1] = vector4(448.159, -1017.41, 28.562, 90.654),
@@ -27,33 +27,41 @@ Config.Locations = {
     },
     ["stash"] = {
         [1] = vector3(453.075, -980.124, 30.889),
+        [2] = vector3(1841.56, 3681.48, 34.19), --sheriff
     },
     ["impound"] = {
         [1] = vector3(436.68, -1007.42, 27.32),
         [2] = vector3(-436.14, 5982.63, 31.34),
+        [3] = vector3(1871.77, 3686.61, 33.69)  --sheriff
     },
     ["helicopter"] = {
         [1] = vector4(449.168, -981.325, 43.691, 87.234),
         [2] = vector4(-475.43, 5988.353, 31.716, 31.34),
+        [3] = vector3(1853.08, 3706.27, 33.97)    --sheriff
     },
     ["armory"] = {
         [1] = vector3(462.23, -981.12, 30.68),
+        [2] = vector3(1838.05, 3687.69, 34.19),   --sheriff
     },
     ["trash"] = {
         [1] = vector3(439.0907, -976.746, 30.776),
+        [2] = vector3(1835.88, 3684.3, 34.19),  --sheriff
     },
     ["fingerprint"] = {
         [1] = vector3(460.9667, -989.180, 24.92),
+        [2] = vector3(1817.23, 3664.48, 34.19),  --sheriff
     },
     ["evidence"] = {
         [1] = vector3(442.1722, -996.067, 30.689),
         [2] = vector3(451.7031, -973.232, 30.689),
         [3] = vector3(455.1456, -985.462, 30.689),
+        [4] = vector3(1831.49, 3680.24, 38.86)  --sheriff
     },
     ["stations"] = {
         [1] = {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
         [2] = {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
         [3] = {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
+        [4] = {label = "Blaine County Sheriff Dept.", coords = vector4(1828.79, 3676.07, 38.86, 201.81)},    --sheriff
     },
 }
 
@@ -215,7 +223,7 @@ Config.Items = {
     items = {
         [1] = {
             name = "weapon_pistol",
-            price = 0,
+            price = 500,
             amount = 1,
             info = {
                 serie = "",
@@ -225,22 +233,22 @@ Config.Items = {
             },
             type = "weapon",
             slot = 1,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [2] = {
             name = "weapon_stungun",
-            price = 0,
+            price = 500,
             amount = 1,
             info = {
                 serie = "",
             },
             type = "weapon",
             slot = 2,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [3] = {
             name = "weapon_pumpshotgun",
-            price = 0,
+            price = 500,
             amount = 1,
             info = {
                 serie = "",
@@ -250,11 +258,11 @@ Config.Items = {
             },
             type = "weapon",
             slot = 3,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [4] = {
             name = "weapon_smg",
-            price = 0,
+            price = 500,
             amount = 1,
             info = {
                 serie = "",
@@ -265,11 +273,11 @@ Config.Items = {
             },
             type = "weapon",
             slot = 4,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [5] = {
             name = "weapon_carbinerifle",
-            price = 0,
+            price = 500,
             amount = 1,
             info = {
                 serie = "",
@@ -280,115 +288,115 @@ Config.Items = {
             },
             type = "weapon",
             slot = 5,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [6] = {
             name = "weapon_nightstick",
-            price = 0,
+            price = 100,
             amount = 1,
             info = {},
             type = "weapon",
             slot = 6,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [7] = {
             name = "pistol_ammo",
-            price = 0,
+            price = 20,
             amount = 5,
             info = {},
             type = "item",
             slot = 7,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [8] = {
             name = "smg_ammo",
-            price = 0,
+            price = 20,
             amount = 5,
             info = {},
             type = "item",
             slot = 8,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [9] = {
             name = "shotgun_ammo",
-            price = 0,
+            price = 20,
             amount = 5,
             info = {},
             type = "item",
             slot = 9,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [10] = {
             name = "rifle_ammo",
-            price = 0,
+            price = 20,
             amount = 5,
             info = {},
             type = "item",
             slot = 10,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [11] = {
             name = "handcuffs",
-            price = 0,
-            amount = 1,
+            price = 20,
+            amount = 4,
             info = {},
             type = "item",
             slot = 11,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [12] = {
             name = "weapon_flashlight",
-            price = 0,
+            price = 20,
             amount = 1,
             info = {},
             type = "weapon",
             slot = 12,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [13] = {
             name = "empty_evidence_bag",
-            price = 0,
+            price = 5,
             amount = 50,
             info = {},
             type = "item",
             slot = 13,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [14] = {
             name = "police_stormram",
-            price = 0,
+            price = 500,
             amount = 50,
             info = {},
             type = "item",
             slot = 14,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [15] = {
             name = "armor",
-            price = 0,
-            amount = 50,
+            price = 150,
+            amount = 10,
             info = {},
             type = "item",
             slot = 15,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [16] = {
             name = "radio",
-            price = 0,
-            amount = 50,
+            price = 150,
+            amount = 2,
             info = {},
             type = "item",
             slot = 16,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         },
         [17] = {
             name = "heavyarmor",
-            price = 0,
-            amount = 50,
+            price = 400,
+            amount = 2,
             info = {},
             type = "item",
             slot = 17,
-            authorizedJobGrades = {0, 1, 2, 3, 4}
+            authorizedJobGrades = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
         }
     }
 }
